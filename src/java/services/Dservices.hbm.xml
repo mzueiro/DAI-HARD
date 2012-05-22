@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22/Mai/2012 20:37:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="services.Dservices" table="dservices" catalog="prototipo2">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="250" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="250" not-null="true" />
+        </property>
+        <property name="zipCode1" type="string">
+            <column name="zipCode1" length="100" not-null="true" />
+        </property>
+        <property name="zipCode2" type="string">
+            <column name="zipCode2" length="100" not-null="true" />
+        </property>
+        <property name="zipDesignation" type="string">
+            <column name="zipDesignation" length="250" not-null="true" />
+        </property>
+        <property name="phone1" type="string">
+            <column name="phone1" length="20" not-null="true" />
+        </property>
+        <property name="phone2" type="string">
+            <column name="phone2" length="20" not-null="true" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="20" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="responsible" type="string">
+            <column name="responsible" length="250" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" not-null="true" />
+        </property>
+        <property name="creationDate" type="date">
+            <column name="creationDate" length="10" not-null="true" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="updateDate" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
